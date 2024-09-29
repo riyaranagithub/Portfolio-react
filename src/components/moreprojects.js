@@ -1,4 +1,4 @@
-export const PROJECTS = [
+export const moreprojects = [
     {
       title: "React Interview Questions Accordion",
       subtitle:

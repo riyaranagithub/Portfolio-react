@@ -1,12 +1,17 @@
-
-import NavBar from './components/NavBar'
-import { Outlet } from 'react-router-dom'
+import {Home,About,Skills,Projects,Contact} from "./components/index"
+import {NavBar} from './components/index'
 function App() {
 
+  
   return (
     <>
       <NavBar/>
-     <Outlet/>
+      <Home/>
+      <About/>
+      <Skills/>
+      <Projects/>
+      <Contact/>
+      
       
     </>
   )

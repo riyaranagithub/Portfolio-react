@@ -1,7 +1,7 @@
 import React from 'react';
 import { IoLogoGithub } from 'react-icons/io5';
 
-function Card({ title, subTitle, link }) {
+function Morecard({ title, subTitle, link }) {
   return (
     <div className='m-4 block max-w-sm overflow-hidden rounded-lg h-64 shadow-xl'>
       <div className='shadow-lg hover:bg-gradient-to-b from-blue-100 to-blue-50 h-full flex flex-col justify-between'>
@@ -19,4 +19,4 @@ function Card({ title, subTitle, link }) {
   );
 }
 
-export default Card;
+export default Morecard;

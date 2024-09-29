@@ -3,7 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 function Home() {
   return (
-    <div className='w-full h-screen bg-blue-100 flex justify-center items-center flex-col p-4'>
+    <div id="Home" className='w-full h-screen bg-blue-100 flex justify-center items-center flex-col p-4'>
       <p className='text-3xl md:text-5xl font-Poppins font-bold mb-4 text-center'>Hello, I'm Riya Rana</p>
       <TypeAnimation
         sequence={[

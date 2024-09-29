@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll'; // Import from react-scroll
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,65 +38,61 @@ function NavBar() {
               isOpen ? 'block' : 'hidden'
             } md:flex justify-between w-full md:space-x-0 md:gap-0 mt-4 md:mt-0`}
           >
+            {/* Scroll Links for sections on the same page */}
             <li className="flex-1 text-center">
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  `${
-                    isActive ? 'text-yellow-200' : 'text-white'
-                  } font-Poppins text-2xl`
-                }
+              <ScrollLink
+                to="Home"
+                smooth={true}
+                duration={500}
+                className="text-white font-Poppins text-2xl cursor-pointer"
+                onClick={() => setIsOpen(false)}
               >
                 Home
-              </NavLink>
+              </ScrollLink>
             </li>
             <li className="flex-1 text-center">
-              <NavLink
-                to="/about"
-                className={({ isActive }) =>
-                  `${
-                    isActive ? 'text-yellow-200' : 'text-white'
-                  } font-Poppins text-2xl`
-                }
+              <ScrollLink
+                to="About"
+                smooth={true}
+                duration={500}
+                className="text-white font-Poppins text-2xl cursor-pointer"
+                onClick={() => setIsOpen(false)}
               >
                 About
-              </NavLink>
+              </ScrollLink>
             </li>
             <li className="flex-1 text-center">
-              <NavLink
-                to="/skills"
-                className={({ isActive }) =>
-                  `${
-                    isActive ? 'text-yellow-200' : 'text-white'
-                  } font-Poppins text-2xl`
-                }
+              <ScrollLink
+                to="Skills"
+                smooth={true}
+                duration={500}
+                className="text-white font-Poppins text-2xl cursor-pointer"
+                onClick={() => setIsOpen(false)}
               >
                 Skills
-              </NavLink>
+              </ScrollLink>
             </li>
             <li className="flex-1 text-center">
-              <NavLink
-                to="/projects"
-                className={({ isActive }) =>
-                  `${
-                    isActive ? 'text-yellow-200' : 'text-white'
-                  } font-Poppins text-2xl`
-                }
+              <ScrollLink
+                to="Projects"
+                smooth={true}
+                duration={500}
+                className="text-white font-Poppins text-2xl cursor-pointer"
+                onClick={() => setIsOpen(false)}
               >
                 Projects
-              </NavLink>
+              </ScrollLink>
             </li>
             <li className="flex-1 text-center">
-              <NavLink
-                to="/contact"
-                className={({ isActive }) =>
-                  `${
-                    isActive ? 'text-yellow-200' : 'text-white'
-                  } font-Poppins text-2xl`
-                }
+              <ScrollLink
+                to="Contact"
+                smooth={true}
+                duration={500}
+                className="text-white font-Poppins text-2xl cursor-pointer"
+                onClick={() => setIsOpen(false)}
               >
-                Contact me
-              </NavLink>
+                Contact
+              </ScrollLink>
             </li>
           </ul>
         </div>
