@@ -1,6 +1,6 @@
 import React from "react";
 
-const Maincard = ({ imageSrc, title, description, link }) => {
+function Maincard ({ imageSrc, title, description, link }) {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
       <div style={styles.card}>

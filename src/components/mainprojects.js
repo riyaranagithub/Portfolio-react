@@ -23,12 +23,12 @@ export const mainprojects = [
     description:"this is a meme generator app",
     link:"https://meme-generator-react-rr.netlify.app/"
  },
-//  {
-//     imageSrc:"",
-//     title:"",
-//     description:"",
-//     link:""
-//  },
+ {
+    imageSrc:"swiggy.png",
+    title:"Swiggy Api",
+    description:"A simple clone of swiggy using swiggy's live api",
+    link:"https://swiggyapilive.netlify.app/"
+ },
 //  {
 //     imageSrc:"",
 //     title:"",

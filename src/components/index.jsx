@@ -13,12 +13,14 @@ export  {
     Home,
     About,
     Contact,
-    Skills,
     NavBar,
+    Skills,
     Projects,
-    Maincard,
-    Morecard,
     mainprojects,
     moreprojects,
+    Maincard,
+    Morecard,
+   
+    
    
 }
